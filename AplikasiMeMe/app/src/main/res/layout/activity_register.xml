@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        android:src="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/inp_nama"
+        android:layout_width="293dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="20dp"
+        android:ems="3"
+        android:hint="Nama"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/inp_email"
+        android:layout_width="292dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="20dp"
+        android:ems="3"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/inp_username"
+        android:layout_width="292dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="20dp"
+        android:ems="3"
+        android:hint="Username"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/inp_password"
+        android:layout_width="293dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="35dp"
+        android:ems="3"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnDaftar"
+        style="@style/CardView"
+        android:layout_width="296dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="20dp"
+        android:text="Daftar"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btnbatal"
+        style="@style/CardView"
+        android:layout_width="295dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="20dp"
+        android:text="Batal"
+        android:textSize="18dp" />
+
+</LinearLayout>

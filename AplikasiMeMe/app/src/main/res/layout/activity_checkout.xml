@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    tools:context=".CheckoutActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="605dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="  Form Pesan Produk"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/nama_produk"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:text="Nama produk    "
+                android:textSize="16dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <EditText
+                android:id="@+id/inp_produk"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/jumlah_produk"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:text="Jumlah              "
+                android:textSize="16dp"
+                android:layout_marginTop="105dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/inp_jumlah"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/harga_produk"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:text="Harga satuan   "
+                android:textSize="16dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <EditText
+                android:id="@+id/inp_harga"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="135dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/ongkir_produk"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:text="Ongkir              "
+                android:textSize="16dp"
+                android:layout_marginTop="195dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <EditText
+                android:id="@+id/inp_ongkir"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="180dp"
+                android:layout_marginRight="10dp"
+                android:text="5000"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginTop="330dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/hitung"
+                style="@style/Base.CardView"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="230dp"
+                android:text="Hitung"
+                app:backgroundTint="#737171" />
+
+            <TextView
+                android:id="@+id/total_produk"
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:text="Total       :"
+                android:textSize="16dp"
+                android:layout_marginTop="290dp"
+                android:layout_marginLeft="60dp"
+                />
+
+            <EditText
+                android:id="@+id/inp_total"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="280dp"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/btnlanjut"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Buat Pesanan"
+                android:textSize="15dp"
+                style="@style/Base.CardView"
+                android:layout_marginTop="510dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/btnbatal"
+                style="@style/Base.CardView"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="553dp"
+                android:layout_marginRight="50dp"
+                android:text="Batal"
+                android:textSize="15dp"
+                app:backgroundTint="#F16C6C" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="  Alamat Pengiriman"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="340dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/nama_order"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="Nama     "
+                android:textSize="16dp"
+                android:layout_marginTop="385dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <EditText
+                android:id="@+id/inp_nama"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="370dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/no"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="No.HP   "
+                android:textSize="16dp"
+                android:layout_marginTop="435dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/inp_nohp"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="415dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/alamat1"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="Alamat   "
+                android:textSize="16dp"
+                android:layout_marginTop="480dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <EditText
+                android:id="@+id/inp_alamat"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="460dp"
+                android:layout_marginRight="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
